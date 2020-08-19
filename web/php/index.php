@@ -6,8 +6,9 @@ session_start();
 
 // если внутри сессии существует не пустая переменная с именем пользователя
 if (isset($_SESSION['login']) && $_SESSION['login'] !== '') {
+    echo "<link rel='stylesheet' href='../css/styles.css'>";
     echo "<div class='profile'>
-              <h2>Hi, ".$_SESSION['login']."</h2>
+              <h2>Hi, ".$_SESSION['login']."!</h2>
               <a href='exit.php'>Выйти</a>
           </div>";
 } else {

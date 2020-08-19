@@ -8,7 +8,7 @@ h1 {
     color: #555555;
     margin-top: 80px;
 }
-.form {
+.form, .profile {
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 30px 40px;
@@ -26,14 +26,30 @@ h1 {
     border: 1px solid gray;
     border-radius: 3px;
 }
-.form button {
+.form button, .profile a {
     min-height: 40px;
+    max-height: 40px;
     width: 150px;
     margin: auto;
 }
-.form button:hover {
+.form button:hover, .profile a:hover {
     background-color: rgb(15, 189, 15);
     color: white;
     cursor: pointer;
     border-style: none;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid lightgray;
+    margin: 0;
 }
